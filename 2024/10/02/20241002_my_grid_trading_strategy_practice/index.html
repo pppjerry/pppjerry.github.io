@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="近期发布的重磅政策引爆了市场情绪  猫笔刀｜乡亲们，村里真的发金条啦 孟岩｜A股与闪电  4个月的跌幅仅用了4天就涨回来了，太疯狂了…只是我从18年毕业开始定投到现在的基金，还没回本，目前亏损幅度已大幅缩窄。而且随着行情的火热，我试验性的网格交易策略也已经全部收网，应该总结一下。 网格交易启蒙与踩坑经过这几年的持续亏损，我愈发觉得A股市场里，网格交易比起定投更加适合我，它解决了我的一个核心问题：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的网格交易策略实践">
+<meta property="og:url" content="https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/index.html">
+<meta property="og:site_name" content="胖杰瑞的笔记本">
+<meta property="og:description" content="近期发布的重磅政策引爆了市场情绪  猫笔刀｜乡亲们，村里真的发金条啦 孟岩｜A股与闪电  4个月的跌幅仅用了4天就涨回来了，太疯狂了…只是我从18年毕业开始定投到现在的基金，还没回本，目前亏损幅度已大幅缩窄。而且随着行情的火热，我试验性的网格交易策略也已经全部收网，应该总结一下。 网格交易启蒙与踩坑经过这几年的持续亏损，我愈发觉得A股市场里，网格交易比起定投更加适合我，它解决了我的一个核心问题：">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pangjerry.github.io/assets/images/%E7%89%9B%E5%9B%9E%E9%80%9F%E5%BD%92.png">
+<meta property="og:image" content="https://pangjerry.github.io/assets/images/image-%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93%E6%8F%90%E9%86%92.png">
+<meta property="og:image" content="https://pangjerry.github.io/assets/images/img-%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%932.png">
+<meta property="article:published_time" content="2024-10-01T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-10-09T16:28:21.080Z">
+<meta property="article:author" content="胖杰瑞">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pangjerry.github.io/assets/images/%E7%89%9B%E5%9B%9E%E9%80%9F%E5%BD%92.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/assets/images/pj_logo2.jpg">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/assets/images/pj_logo2.jpg" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/pj_logo2.jpg">
+        
+      
+    
+    <!-- title -->
+    <title>我的网格交易策略实践</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="顶部" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a href="/categories/">分类</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="下一篇" href="/2024/09/28/20240928_change_theme_to_cactus/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="返回顶部" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <!-- <li><a class="icon" aria-label="分享文章" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li> -->
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <!-- <span id="i-share" class="info" style="display:none;">分享文章</span> -->
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <!-- <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&text=我的网格交易策略实践"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&title=我的网格交易策略实践"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&is_video=false&description=我的网格交易策略实践"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=我的网格交易策略实践&body=Check out this article: https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&title=我的网格交易策略实践"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&title=我的网格交易策略实践"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&title=我的网格交易策略实践"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&title=我的网格交易策略实践"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&name=我的网格交易策略实践&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&t=我的网格交易策略实践"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul> -->
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93%E5%90%AF%E8%92%99%E4%B8%8E%E8%B8%A9%E5%9D%91"><span class="toc-number">1.</span> <span class="toc-text">网格交易启蒙与踩坑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93%E5%AE%9E%E6%93%8D"><span class="toc-number">2.</span> <span class="toc-text">网格交易实操</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%A1%AE%E5%AE%9A%E4%BA%A4%E6%98%93%E5%93%81%E7%A7%8D"><span class="toc-number">2.1.</span> <span class="toc-text">1. 确定交易品种</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%88%97%E5%87%BA%E4%BA%A4%E6%98%93%E7%BD%91%E6%A0%BC"><span class="toc-number">2.2.</span> <span class="toc-text">2. 列出交易网格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95"><span class="toc-number">2.3.</span> <span class="toc-text">3. 压力测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%AE%BE%E7%BD%AE%E4%BA%A4%E6%98%93%E6%8F%90%E9%86%92%E5%92%8C%E4%BA%A4%E6%98%93"><span class="toc-number">2.4.</span> <span class="toc-text">4. 设置交易提醒和交易</span></a></li></ol></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        我的网格交易策略实践
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">胖杰瑞</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2024-10-01T16:00:00.000Z" class="dt-published" itemprop="datePublished">2024-10-02</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/%E6%96%B9%E6%B3%95%E8%AE%BA/">方法论</a>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <p><img src="/../assets/images/%E7%89%9B%E5%9B%9E%E9%80%9F%E5%BD%92.png" alt="jike_29616061600211_pic"></p>
+<p>近期发布的重磅政策引爆了市场情绪</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=Mzg2NzcxMjE1NA==&chksm=ceb5ffe2f9c276f40574e97ce7fdc6faf364d085a6daab3bd4382d8f35bfedcbf7efc188db4e&idx=1&mid=2247504407&scene=58&sn=ff82476b87092f5a16fc92f88dd1d478&subscene=0">猫笔刀｜乡亲们，村里真的发金条啦</a></li>
+<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/YPJv-qvv4YvrbP3PyXQrMw">孟岩｜A股与闪电</a></li>
+</ul>
+<p>4个月的跌幅仅用了4天就涨回来了，太疯狂了…只是我从18年毕业开始定投到现在的基金，还没回本，目前亏损幅度已大幅缩窄。而且随着行情的火热，我试验性的网格交易策略也已经全部收网，应该总结一下。</p>
+<h2 id="网格交易启蒙与踩坑"><a href="#网格交易启蒙与踩坑" class="headerlink" title="网格交易启蒙与踩坑"></a>网格交易启蒙与踩坑</h2><p>经过这几年的持续亏损，我愈发觉得A股市场里，网格交易比起定投更加适合我，它解决了我的一个核心问题：什么时候卖？</p>
+<ul>
+<li>18年刚开始基金定投的时候，行情是上涨的，一直定投一直涨，盈利好像都30%-40%了也没有卖，坚定持有总想着能涨更多，后来就迎来了持续下跌，不仅盈利跌没了，本金也亏了不少。也不舍得割肉，“相信长期持有”一直到现在。定投两字，只说了怎么买，并没有说怎么卖，完全就是凭感觉，毫无策略可言</li>
+<li>网格策略，每一笔买入都设定好了什么时候卖出，例如我100买，等涨到了120就卖出100块，留20块在市场里继续吃涨幅。关键这部分是纯利润，跌没了都没有亏本金心疼。想赚多少完全看自己设定的盈利比例，然后就是耐心的等。这样起码能实现落袋为安，不至于凭感觉交易，高了不舍得卖想赚多点，跌了不舍得割肉，然后本金一直在市场里出不来</li>
+</ul>
+<p>然而一开始实践网格策略也踩了个大坑，跟某大V学做中概互联网ETF的网格，follow他的策略（先建底仓，然后设置上涨下跌的条件单），以当时的价格一下子建了厚厚的底仓。如果后续的行情是上涨的，我一定对他的方法论深信不疑，然而一切相反，持续的下跌到现在涨了好几天了也还亏30%+，让我觉得建底仓完全就是一个错误的操作，错的离谱。经历塑造信念，这话不假</p>
+<p>本来踩了坑之后就不相信网格了，但是看到<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/CGaYQcAFPVm0T0MPE_ax8g">也谈钱｜钱不多，但感觉挣了一个亿</a>聊起了网格，又想再试试，不一样的是，这次选择了E大，建了一个试验性的网格策略，经过这轮上涨全部收网，体验真的很舒服（虽然都是网格交易，但具体操作区别也太大了）</p>
+<p>在这里强烈推荐学习E大策略原文</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/uxktt5ZpNo03FpQQX-aG7g"># 波段策略.网格之一：写在前面、体系以及策略</a></li>
+<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/-czfqGvxkDcay_tSI1jv5g"># 波段策略.网格之二：网格策略基础&#x2F;1.0版</a></li>
+<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/8pRKsjiQSZzrmH-uWCkRLQ"># 波段策略.网格之三：网格策略进阶&#x2F;2.0版</a></li>
+</ul>
+<p>经过这次行情，我对A股市场又有了新的理解，A股市场行情政策导向太夸张了，究其原因，可能如开头孟岩文章里的数据，和美国居民财富里权益资产占35-40%相比，中国居民权益资产仅占10%，一有政策风向，大家就开始储蓄搬家。本来觉得网格策略只是长期策略的一个补充，现在觉得A股里网格策略才是正道，所谓长期策略无非是收益设置得更大的网格而已。一定得学会卖，而不是定投那样傻乎乎的不知道到底要定投到猴年马月。十年前是A股3000点保卫战，十年后依然是3000点保卫战…</p>
+<p>不过，如果哪天国民财富中权益资产成为主流，大家也不会动不动就储蓄搬家，等到这时候，估计就能安心长期持有了，期待有这么一天吧</p>
+<h2 id="网格交易实操"><a href="#网格交易实操" class="headerlink" title="网格交易实操"></a>网格交易实操</h2><p>具体的网格交易操作，在E大的文章中有很详细的操作说明，操作前最好读多几遍，大概如下</p>
+<ol>
+<li>确定交易品种</li>
+<li>列出网格表格</li>
+<li>做压力测试</li>
+<li>设置交易提醒</li>
+<li>按照交易提醒进行交易</li>
+</ol>
+<h3 id="1-确定交易品种"><a href="#1-确定交易品种" class="headerlink" title="1. 确定交易品种"></a>1. 确定交易品种</h3><p>E大给出的交易品种底线：不会死。就是不会像个股那样有朝一日会退市</p>
+<p>比较好的就是指数ETF，这次试验性网格选择了券商ETF，波动大的同时还可以作为市场行情的信号灯，牛市来了大家都在讨论，券商热度升高，容易触发卖出，熊市来了大家都在装死，券商热度降低，容易触发买入。比如这轮行情，连续两天触发卖出，看到提醒就觉得大的要来了</p>
+<p><img src="/../assets/images/image-%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93%E6%8F%90%E9%86%92.png" alt="image-20241009235202804"></p>
+<h3 id="2-列出交易网格"><a href="#2-列出交易网格" class="headerlink" title="2. 列出交易网格"></a>2. 列出交易网格</h3><p>E大有说明的项有，交易价格、交易金额、交易日期。</p>
+<p>关于交易日期，这里我感觉作用不大，因为没有办法预测哪天能到达目标的价位，如果只是单纯为了记录达成交易的时间，券商APP也能做到。所以就不列了</p>
+<p>关于交易价格，这个细节和我最开始的理解有点出入。根据当时的价位0.857，差不多就是0.85这个档买入，我原以为卖出的价格会是价格的5%，也就是0.85 + 0.85 * 0.05 &#x3D; 0.8925 ，然后如果在0.8925买入的话，那么再乘上5%，也就是0.8925 + 0.8925 * 0.05 &#x3D; 0.937125。每一网格的大小都是妥妥的5%。但根据E大的表格，以1为基准算5%就是0.05，每一个网格都是0.05的差值，如果是0.85买入，卖出价格会是在0.9，收益5.8%，1.2买入的话，卖出价1.25，收益4.1%。这样的设置意味着不同的买入价位，实际收益率都不会是5%。这就是和我最开始对网格收益大小理解有出入的地方，实践下来发现E大的价格条件设置更方便，没那么多复杂的计算</p>
+<p>然后是关于交易的金额，因为5%左右的网格大小，1000块其实也只能赚50块左右，想赚多少就增加多少的资金，例如一次想赚100块，那每次就交易2000块，其中只卖出2000块是为了把利润留在市场中，因为收回本金之后剩下的都是纯利润，亏了也不会太心疼，而且还有机会跟着行情持续做大收益。</p>
+<p>翻出了当时学着做的表格，大概就长这样</p>
+<p><img src="/../assets/images/img-%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%932.png" alt="img"></p>
+<p>现在觉得，最主要就是档位和买卖金额两项，因为APP可以自动根据金额确认买卖的份额，后来都没怎么关心份额</p>
+<h3 id="3-压力测试"><a href="#3-压力测试" class="headerlink" title="3. 压力测试"></a>3. 压力测试</h3><p>经过这轮下跌，真觉得压力测试非常重要。通过压力测试，我可以对我的资金情况有初步的判断，我完全不知道最大的下跌幅度会到哪里，但是可以参考历史的最高&#x2F;最低</p>
+<p>可以查到券商ETF，历史最高1.335，历史最低0.584，中点则是0.9595，当时的价位是0.857，还算便宜</p>
+<ul>
+<li>下跌30%即到达历史最低附近</li>
+<li>上涨55%到达历史最高</li>
+</ul>
+<p>最坏情况下跌40%，到达0.5142，假设0.05一网，一网2000块，最后一网价格在0.5，共买入8网，需要资金1.6w。也就是说最坏情况，一直买入8网，然后像中概那样一瘸不振，我无法想象下跌40%时我的真实感受，但从资金量的角度也只是被套牢1.6w资金，也还可以接受。(注意，如果增大资金，也就意味着长期下跌需要投入的资金会更多，就可以看看自己是否可以接受了，这也是压力测试的意义所在）</p>
+<h3 id="4-设置交易提醒和交易"><a href="#4-设置交易提醒和交易" class="headerlink" title="4. 设置交易提醒和交易"></a>4. 设置交易提醒和交易</h3><p>因为是挂的条件单，程序会自动监控执行，省很多事</p>
+<p>基本是</p>
+<ul>
+<li>每买入一格，就设置卖出以及低一格的买入</li>
+<li>每卖出一格，就设置低一格的买入</li>
+</ul>
+<p>然后等就完事了，后面发现价格一直在上下波动，所以直接从条件单的历史记录重新创建就好了，也很方便</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">首页</a></li>
+        
+          <li><a href="/archives/">归档</a></li>
+        
+          <li><a href="/categories/">分类</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93%E5%90%AF%E8%92%99%E4%B8%8E%E8%B8%A9%E5%9D%91"><span class="toc-number">1.</span> <span class="toc-text">网格交易启蒙与踩坑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E6%A0%BC%E4%BA%A4%E6%98%93%E5%AE%9E%E6%93%8D"><span class="toc-number">2.</span> <span class="toc-text">网格交易实操</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%A1%AE%E5%AE%9A%E4%BA%A4%E6%98%93%E5%93%81%E7%A7%8D"><span class="toc-number">2.1.</span> <span class="toc-text">1. 确定交易品种</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%88%97%E5%87%BA%E4%BA%A4%E6%98%93%E7%BD%91%E6%A0%BC"><span class="toc-number">2.2.</span> <span class="toc-text">2. 列出交易网格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95"><span class="toc-number">2.3.</span> <span class="toc-text">3. 压力测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%AE%BE%E7%BD%AE%E4%BA%A4%E6%98%93%E6%8F%90%E9%86%92%E5%92%8C%E4%BA%A4%E6%98%93"><span class="toc-number">2.4.</span> <span class="toc-text">4. 设置交易提醒和交易</span></a></li></ol></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <!-- <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&text=我的网格交易策略实践"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&title=我的网格交易策略实践"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&is_video=false&description=我的网格交易策略实践"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=我的网格交易策略实践&body=Check out this article: https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&title=我的网格交易策略实践"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&title=我的网格交易策略实践"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&title=我的网格交易策略实践"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&title=我的网格交易策略实践"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&name=我的网格交易策略实践&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://pangjerry.github.io/2024/10/02/20241002_my_grid_trading_strategy_practice/&t=我的网格交易策略实践"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul> -->
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        
+        <!-- <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a> -->
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2024
+    胖杰瑞
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a href="/categories/">分类</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板！\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功！");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
