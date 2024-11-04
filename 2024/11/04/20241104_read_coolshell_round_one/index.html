@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="整理以前的素材，翻出了几篇文章，程序员如何把控自己的职业、使用简单的逻辑方法进行独立思考、如何超过大多数人…… 都是coolshell里不可多得的好文，可惜的是，耗子叔已经离开，coolshell再也不会有更新了。一度担心某一天网站再也不能访问，很多人也一样，于是他们整理了这个项目：haoel-articles，看得出来，耗子叔是一大批技术人的明灯 简单翻翻coolshell，印象里只读过几篇热门">
+<meta property="og:type" content="article">
+<meta property="og:title" content="coolshell文章整理（一）">
+<meta property="og:url" content="https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/index.html">
+<meta property="og:site_name" content="胖杰瑞的笔记本">
+<meta property="og:description" content="整理以前的素材，翻出了几篇文章，程序员如何把控自己的职业、使用简单的逻辑方法进行独立思考、如何超过大多数人…… 都是coolshell里不可多得的好文，可惜的是，耗子叔已经离开，coolshell再也不会有更新了。一度担心某一天网站再也不能访问，很多人也一样，于是他们整理了这个项目：haoel-articles，看得出来，耗子叔是一大批技术人的明灯 简单翻翻coolshell，印象里只读过几篇热门">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-11-03T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-11-04T15:17:18.593Z">
+<meta property="article:author" content="胖杰瑞">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/assets/images/pj_logo2.jpg">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/assets/images/pj_logo2.jpg" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/pj_logo2.jpg">
+        
+      
+    
+    <!-- title -->
+    <title>coolshell文章整理（一）</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="顶部" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a href="/categories/">分类</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="下一篇" href="/2024/10/13/20241013_travel_zhangzhou_quanzhou/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="返回顶部" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <!-- <li><a class="icon" aria-label="分享文章" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li> -->
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <!-- <span id="i-share" class="info" style="display:none;">分享文章</span> -->
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <!-- <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&text=coolshell文章整理（一）"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&title=coolshell文章整理（一）"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&is_video=false&description=coolshell文章整理（一）"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=coolshell文章整理（一）&body=Check out this article: https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&title=coolshell文章整理（一）"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&title=coolshell文章整理（一）"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&title=coolshell文章整理（一）"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&title=coolshell文章整理（一）"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&name=coolshell文章整理（一）&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&t=coolshell文章整理（一）"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul> -->
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%80%BC%E5%BE%97%E5%A4%9A%E7%9C%8B%E5%87%A0%E9%81%8D%E7%9A%84%E5%A5%BD%E6%96%87"><span class="toc-number">1.</span> <span class="toc-text">值得多看几遍的好文</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E6%9D%A5%E8%BF%98%E8%83%BD%E8%BF%99%E6%A0%B7"><span class="toc-number">2.</span> <span class="toc-text">原来还能这样</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E7%A7%91%E6%99%AE"><span class="toc-number">3.</span> <span class="toc-text">一些奇奇怪怪的科普</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">3.1.</span> <span class="toc-text">其他</span></a></li></ol></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        coolshell文章整理（一）
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">胖杰瑞</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2024-11-03T16:00:00.000Z" class="dt-published" itemprop="datePublished">2024-11-04</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/%E5%90%91%E6%A6%9C%E6%A0%B7%E5%AD%A6%E4%B9%A0/">向榜样学习</a>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <p>整理以前的素材，翻出了几篇文章，<a target="_blank" rel="noopener" href="https://coolshell.cn/articles/20977.html">程序员如何把控自己的职业</a>、<a target="_blank" rel="noopener" href="https://coolshell.cn/articles/20533.html">使用简单的逻辑方法进行独立思考</a>、<a target="_blank" rel="noopener" href="https://coolshell.cn/articles/19464.html">如何超过大多数人</a>…… 都是<a target="_blank" rel="noopener" href="https://coolshell.cn/">coolshell</a>里不可多得的好文，可惜的是，耗子叔已经离开，coolshell再也不会有更新了。一度担心某一天网站再也不能访问，很多人也一样，于是他们整理了这个项目：<a target="_blank" rel="noopener" href="https://github.com/ghostincoolshell/haoel-articles">haoel-articles</a>，看得出来，耗子叔是一大批技术人的明灯</p>
+<p>简单翻翻coolshell，印象里只读过几篇热门，还有好多没有读过，心血来潮想都看一遍，看看还有没有错过的宝藏，于是有了这篇文章，主要是个人对coolshell文章的索引，方便自己以后重温。读起来才意识到想要一次性看完所有文章不现实，读完后面忘前面，目前读完了2016-2023年的文章，2016年我上大三，也是这一年脱离学生社团活动，开始认真学技术，蛮合适的一个时间节点，先整理一轮</p>
+<h3 id="值得多看几遍的好文"><a href="#值得多看几遍的好文" class="headerlink" title="值得多看几遍的好文"></a>值得多看几遍的好文</h3><p>如果以问题为导向去看文章，那么coolshell里绝大多数技术文章估计都不会有被发现的机会。但总有一些命题，与技术无关，而且我们也常常会感到困惑以及迷茫，不知所措的时候看看这些文章，也许有不一样的想法</p>
+<table>
+<thead>
+<tr>
+<th>文章</th>
+<th>想法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/19464.html">如何超过大多数人</a></td>
+<td>个人认为这篇是全站最佳。核心是要我们提升认知、掌握知识、锻炼技能，具备领导力，但更有特色的是，文章列举了非常多具体的生活现象，是可以“避坑”的程度。真的常看常新</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/20276.html">别让自己“墙”了自己</a></td>
+<td>没有太多的大道理，列举了好几个人的小故事，告诉我们，不要自己给自己设限，拥抱更大的可能性</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/17583.html">技术人员的发展之路</a></td>
+<td>技术能做多久，什么阶段应该干什么，不同阶段的人生会是怎么样的，文章有非常好的解答</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/20977.html">程序员如何把控自己的职业</a></td>
+<td>告诉我们要认识规律和自己，打牢基础，提升效率，并且对这些命题都给出了比较细致的说明</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/19085.html">谈谈我的“三观”</a></td>
+<td>透露自己的世界观、人生观、价值观，非常值得学习</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/20533.html">使用简单的逻辑方法进行独立思考</a></td>
+<td>一些更符合逻辑的思考方式</td>
+</tr>
+</tbody></table>
+<h3 id="原来还能这样"><a href="#原来还能这样" class="headerlink" title="原来还能这样"></a>原来还能这样</h3><p>世界很大，有很多东西如果没有别人的介绍，我们可能永远不得而知，就像井底之蛙。collshell里有不少文章，有助于开阔眼界，知晓一些和日常不一样的玩法</p>
+<table>
+<thead>
+<tr>
+<th>文章</th>
+<th>想法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/22367.html">聊聊 nostr 和 审查</a></td>
+<td>email居然是很难封禁和审查的</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/22298.html">聊聊团队协同和协同工具</a></td>
+<td>环境孕育文化，文化滋生工具</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/20765.html">MegaEase的远程工作文化</a></td>
+<td>高效率的远程工作，是怎么样的</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/18246.html">关于我”极客时间“的专栏</a></td>
+<td>《左耳听风》的番外，突然觉得专栏的价格特别的值</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/17972.html">我看绩效考核</a></td>
+<td>绩效考核的不是人，而是提高组织效率</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/17497.html">什么是工程师文化？</a></td>
+<td>对这种工程师文化非常憧憬和向往</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/21672.html">我做系统架构的一些原则</a></td>
+<td>好的系统架构，长什么样</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/21589.html">如何做一个有质量的技术分享</a></td>
+<td>介绍一些做分享的技巧</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/19271.html">“努力就会成功”</a></td>
+<td>要更聪明，知道自己是不是在用蛮力，要拒绝劳动密集型</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/17680.html">从Gitlab误删除数据库想到的</a></td>
+<td>运维能力强弱 &#x3D;&#x3D; 自动化程度</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/17446.html">这多年来我一直在钻研的技术</a></td>
+<td>耗子叔相对全面的介绍了自己的技术背景，突然能理解为什么耗子叔能写出这些技术文章了</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/22422.html">是微服务架构不香还是云不香？</a></td>
+<td>全站最后一篇更新，而且很能说明大多数人没有独立思考能力的现象，<br />还顺带看到了一篇讲Amazon和Google轶事的文章，蛮有趣<a target="_blank" rel="noopener" href="https://coolshell.cn/articles/5701.html">SteveY对Amazon和Google平台的吐槽</a></td>
+</tr>
+</tbody></table>
+<h3 id="一些奇奇怪怪的科普"><a href="#一些奇奇怪怪的科普" class="headerlink" title="一些奇奇怪怪的科普"></a>一些奇奇怪怪的科普</h3><table>
+<thead>
+<tr>
+<th>文章</th>
+<th>想法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/21649.html">源代码特洛伊木马攻击</a></td>
+<td>居然能利用字符集来攻击</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/21003.html">计时攻击 Timing Attacks</a></td>
+<td>居然能利用接口响应时间来推测逻辑</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/19612.html">50年前的登月程序和程序员有多硬核</a></td>
+<td>如标题，过于硬核</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://coolshell.cn/articles/17998.html">Linux PID 1 和 Systemd</a></td>
+<td>linux社区的故事也挺狗血的，而且近期linus因俄乌战争在linux贡献者里面剔除俄罗斯开发者的新闻，更加让人败好感</td>
+</tr>
+</tbody></table>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>还有很多其他有意思的文章，只是此刻没能引发我个人的兴趣，或许将来也会有重温的一天</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">首页</a></li>
+        
+          <li><a href="/archives/">归档</a></li>
+        
+          <li><a href="/categories/">分类</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%80%BC%E5%BE%97%E5%A4%9A%E7%9C%8B%E5%87%A0%E9%81%8D%E7%9A%84%E5%A5%BD%E6%96%87"><span class="toc-number">1.</span> <span class="toc-text">值得多看几遍的好文</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E6%9D%A5%E8%BF%98%E8%83%BD%E8%BF%99%E6%A0%B7"><span class="toc-number">2.</span> <span class="toc-text">原来还能这样</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E7%A7%91%E6%99%AE"><span class="toc-number">3.</span> <span class="toc-text">一些奇奇怪怪的科普</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">3.1.</span> <span class="toc-text">其他</span></a></li></ol></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <!-- <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&text=coolshell文章整理（一）"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&title=coolshell文章整理（一）"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&is_video=false&description=coolshell文章整理（一）"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=coolshell文章整理（一）&body=Check out this article: https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&title=coolshell文章整理（一）"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&title=coolshell文章整理（一）"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&title=coolshell文章整理（一）"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&title=coolshell文章整理（一）"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&name=coolshell文章整理（一）&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://pangjerry.github.io/2024/11/04/20241104_read_coolshell_round_one/&t=coolshell文章整理（一）"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul> -->
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        
+        <!-- <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a> -->
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2024
+    胖杰瑞
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a href="/categories/">分类</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板！\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功！");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
