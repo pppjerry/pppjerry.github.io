@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="AI编程火起来好久了，但之前没想着实现些什么。直到最近基于自身需求萌生出一个想法，而市面上似乎没有合适的工具，才用起AI编程，花了点时间用vscode+copilot折腾了一个简单的桌面应用（注，本文的AI编程全都指向vscode+copilot）。 总的来说，从0到1的过程确实很惊艳，简单几句话描述就能生成一个可以跑起来的桌面应用，关键页面UI样式也不丑，但从1开始不断加功能，不断打磨的过程也很">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一次AI编程体验">
+<meta property="og:url" content="https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/index.html">
+<meta property="og:site_name" content="胖杰瑞的笔记本">
+<meta property="og:description" content="AI编程火起来好久了，但之前没想着实现些什么。直到最近基于自身需求萌生出一个想法，而市面上似乎没有合适的工具，才用起AI编程，花了点时间用vscode+copilot折腾了一个简单的桌面应用（注，本文的AI编程全都指向vscode+copilot）。 总的来说，从0到1的过程确实很惊艳，简单几句话描述就能生成一个可以跑起来的桌面应用，关键页面UI样式也不丑，但从1开始不断加功能，不断打磨的过程也很">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-03-14T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-03-15T01:54:59.333Z">
+<meta property="article:author" content="胖杰瑞">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/assets/images/pj_logo2.jpg">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/assets/images/pj_logo2.jpg" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/pj_logo2.jpg">
+        
+      
+    
+    <!-- title -->
+    <title>一次AI编程体验</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="顶部" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a href="/categories/">分类</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="下一篇" href="/2025/01/18/20250115_to_be_a_keyboard_player/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="返回顶部" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <!-- <li><a class="icon" aria-label="分享文章" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li> -->
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <!-- <span id="i-share" class="info" style="display:none;">分享文章</span> -->
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <!-- <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&text=一次AI编程体验"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&is_video=false&description=一次AI编程体验"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=一次AI编程体验&body=Check out this article: https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&name=一次AI编程体验&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&t=一次AI编程体验"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul> -->
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#AI%E7%BC%96%E7%A8%8B%E5%AF%B9%E6%88%91%E7%9A%84%E4%BB%B7%E5%80%BC"><span class="toc-number">1.</span> <span class="toc-text">AI编程对我的价值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%91%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">发现的问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%97%A0%E6%B3%95%E8%87%AA%E5%B7%B1%E8%B0%83%E8%AF%95"><span class="toc-number">2.1.</span> <span class="toc-text">1. 无法自己调试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%93%8D%E5%BA%94%E8%B6%8A%E6%9D%A5%E8%B6%8A%E4%B9%85"><span class="toc-number">2.2.</span> <span class="toc-text">2. 响应越来越久</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%AE%A9%E4%BD%BF%E7%94%A8%E8%80%85%E4%BA%A7%E7%94%9F%E4%BE%9D%E8%B5%96"><span class="toc-number">2.3.</span> <span class="toc-text">3. 让使用者产生依赖</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%A0%E7%82%B9%E5%BB%BA%E8%AE%AE"><span class="toc-number">3.</span> <span class="toc-text">几点建议</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        一次AI编程体验
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">胖杰瑞</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2025-03-14T16:00:00.000Z" class="dt-published" itemprop="datePublished">2025-03-15</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/%E4%B8%8EAI%E5%85%B1%E8%88%9E/">与AI共舞</a>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <p>AI编程火起来好久了，但之前没想着实现些什么。直到最近基于自身需求萌生出一个想法，而市面上似乎没有合适的工具，才用起AI编程，花了点时间用vscode+copilot折腾了一个简单的桌面应用（注，本文的AI编程全都指向vscode+copilot）。</p>
+<p>总的来说，从0到1的过程确实很惊艳，简单几句话描述就能生成一个可以跑起来的桌面应用，关键页面UI样式也不丑，但从1开始不断加功能，不断打磨的过程也很折磨，折腾了几次AI都改不出让我满意的效果，还引入了新的bug，让它自己解决问题，试了好几次依然没改对，只好放弃折腾（我自己也改不动），推倒重来。</p>
+<p>不过，在重新开始之前，还是有必要总结一下使用经验的。一开始听信各种自媒体吹捧，以至于让我对现阶段的AI编程有了过高的期待，然而目前看来问题蛮多，不过这也不是AI的问题，在实际生活中，需求的澄清和理解，也是一个反复的过程，人和人都不一定能沟通清楚，何况是人与AI？所以，与其调教AI成为好员工，时不时被气的不行，不如调教我自己成为使用AI的熟练工</p>
+<h2 id="AI编程对我的价值"><a href="#AI编程对我的价值" class="headerlink" title="AI编程对我的价值"></a>AI编程对我的价值</h2><p>目前AI编程对我最大的价值，在于快速验证一些小想法，做出来的东西不完美，但不讲究的话也确实能用</p>
+<p>毕业6年多一直从事后端开发，前端懂点皮毛，但如果要从头开始做一个前端项目，直接就能把我劝退。不找队友的情况下，不仅要学前端，还要有点设计和审美，以至于之前即便有想法，一想到做交互页面需要找人或者自己学，想法直接就搁浅了，可能学不到一半就放弃了，而现在AI编程的出现，确实降低了想法落地的门槛，验证阶段不用再去找人，或者花时间学习，用AI就能快速看到效果，节省不少时间。到时觉得效果还不错，想加大投入的时候，再去认真学也不迟</p>
+<p>举个例子，在做桌面应用之前，是先用AI做的微信小程序。花了一两晚用AI生成代码，然后用小程序开发工具直接打开，调试效果，就发现</p>
+<ul>
+<li>需要对外发请求获取公开数据，但代码里的http header在小程序对外请求时会自动替换，而这个关键header参数又决定了能不能拿到数据</li>
+<li>说是可以用云函数，然而小程序测试号不支持，又注册了一个正式号，等注册完，果然还得花钱才能用云函数</li>
+<li>还没花钱，就发现：小程序对外请求需要添加白名单，但测试号可以加的域名，在正式号里一直添加不了，小程序后台提交的时候审核不通过，没有具体的原因，结合可能的原因列表推测，大概率是域名没有备案？</li>
+<li>还不确定花钱用云函数能不能绕过限制，也不确定后续还会有哪些坑，微信生态庞大，但限制也很多，不如直接弃坑</li>
+</ul>
+<p>这要是没有AI，从0开始接触小程序开发，到发现这些坑，估计就不是一两晚的事情了。后续就转向用Electron开发桌面应用，数据都存本地，没有服务器成本，还支持跨平台。给AI说了下，AI也是二话不说直接生成代码，出来一个桌面应用。当有一个半成品放在眼前，总会冒出更多的想法，这里改一下，那里优化一下 ，于是就发现了一些问题</p>
+<h2 id="发现的问题"><a href="#发现的问题" class="headerlink" title="发现的问题"></a>发现的问题</h2><p>有问题，但不一定是AI编程的问题，也有可能是我使用方式不对。</p>
+<h3 id="1-无法自己调试"><a href="#1-无法自己调试" class="headerlink" title="1. 无法自己调试"></a>1. 无法自己调试</h3><p>AI编程目前侧重于生成代码，实际运行效果如何，得依靠我去把项目启动起来，才能验证。于是整个流程就变成了</p>
+<ol>
+<li>我告诉AI想要什么，AI根据自己的理解生成一大段代码</li>
+<li>开始debug，发现问题，直接把错误信息发给AI，AI直接修复</li>
+<li>继续debug，确认当前功能正常。继续循环上述步骤，进一步增加&#x2F;调整功能</li>
+</ol>
+<p>持续改进的过程中，我就是一个产品+测试，AI就是那些写了逻辑直接提测从不自测的开发，经常改出问题而不自知。一些功能问题还好，比如按钮点击不生效啥的很快就能修复，麻烦的是UI问题，后面选择放弃也是因为UI改坏了，各种css样式和js代码相互影响，仅靠AI已经改不好了。而且AI编程好像遵循的是追加代码的思路， 同一个组件的CSS样式存在不少的重复，让它把重复代码删掉吧，等它改完代码还在，一点都不听劝。这里有点好奇，明明AI能阅读整个项目的代码，为什么不在原来的基础上改，而是追加不少新代码呢？难道学会了人类开发在屎山上堆屎的倾向？</p>
+<h3 id="2-响应越来越久"><a href="#2-响应越来越久" class="headerlink" title="2. 响应越来越久"></a>2. 响应越来越久</h3><p>起初功能简单，响应还挺快的，但持续加逻辑之后，代码文件越来越长。而每次AI处理文件，都是先阅读整个文件，然后再重写整个文件。一来一回需要的时间蛮久，如果改一次就能改对，那倒是能原谅它。问题是改了很多次依然没解决，此时我就像我的领导，丝毫不理解一个“简单”的bug为什么需要改怎么久。</p>
+<p>也萌生过一个想法，把逻辑拆到不同的文件中， 响应会不会快一些？还没实验过，后续可以试试，但可以想到的是，拆成多个小文件，AI不可避免的也要阅读多个文件，最后总体的阅读量好像差不多？不阅读所有的代码，再加上不自测，到头来同样也会改出各种问题。或许这就是非本地大模型的局限性，并不适合处理整个项目，毕竟把所有代码传到远端，阅读理解一番，再把改动传回来，重写相关文件，费时是必然的，但无疑还是比人脑处理快多了，但人估计一遍就能改对，而现阶段还不能对AI编程有这样的期望</p>
+<h3 id="3-让使用者产生依赖"><a href="#3-让使用者产生依赖" class="headerlink" title="3. 让使用者产生依赖"></a>3. 让使用者产生依赖</h3><p>AI的正确率无法保证，但用的时候还是按捺不住想要偷懒的心。想加的功能，直接扔给AI，发现的问题也丢给AI，想起之前摘录的内容</p>
+<blockquote>
+<p>我长期使用 AI，靠它帮助编程，已经不能在没有 AI 帮助的情况下解决问题了。</p>
+<p>我不再阅读文档。既然 AI 可以立即解释一切，为什么还要费心阅读呢？</p>
+<p>我的调试技能日益生疏。我甚至不再阅读报错消息，只是把它们复制并粘贴到 AI，让 AI 解读。</p>
+<p>我已经成为了一个人肉剪贴板，仅仅是代码和 AI 之间的中介。</p>
+<p>以前，每条报错都会让我学到一些东西。现在呢？AI 提供了解决方案，我却什么也没学到。实时答案带来的多巴胺刺激，取代了真正理解的满足感。</p>
+<p>另一个受到影响的地方是深度理解。以前，我花费数小时来理解某个解决方案为何有效，现在，我只是照着 AI 建议实施。如果这些建议不起作用，我会改进提示的上下文，再次询问 AI。这种循环使得我对 AI 的依赖性不断增加。</p>
+<p>我的情绪也受到影响。以前，解决新问题是编程乐趣的一部分。现在，如果 AI 不能在五分钟内给出解决方案，我就会感到沮丧。</p>
+<p>我该怎么办？我不想采取任何激进的措施，比如完全放弃 AI，这是不现实的。我打算每周实行一天”无 AI 日”。</p>
+<p>我的感觉是，AI 不会让我们成为10倍效率的程序员，只会让我们对它的依赖程度增加10倍。</p>
+<p>每当我们让 AI 解决我们自己可以解决的问题时，我们就是用短期生产力换取长期理解，我们以牺牲明天的能力为代价来完成今天的效率。</p>
+<p>—- <a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2025/02/weekly-issue-336.html">科技爱好者周刊（第 336 期）：面对 AI，互联网正在衰落</a></p>
+</blockquote>
+<p>深有同感，AI编程的过程中不仅依赖AI解决问题，也不去看AI写出来的代码，每次得到结果都是无脑accept，然后debug看效果。以至于后来真的遇到AI解决不了的问题了，由于不熟悉代码，也没有在这个过程中，去看AI写出来的代码，有点无从下手的感觉。就是想让它改，也说不出一个前端领域内的专有名词来让它理解我的诉求，只会说类似于，这个框大一点，这个圆小一点之类的提示词</p>
+<p>当然啦，在选择重开之前，还是花了大半天去看代码尝试解决问题的，只是后来觉得，与其优化一个不太满意的雏形，倒不如拿这个时间来琢磨更好的设计，完善一下想法，然后再来一遍</p>
+<h2 id="几点建议"><a href="#几点建议" class="headerlink" title="几点建议"></a>几点建议</h2><p>后续用AI编程的一些建议</p>
+<ul>
+<li>做好版本控制，得到一个稳定版本，就可以考虑用git commit一次。后续让AI改问题，越改越乱的时候，可以考虑回退版本，重新开始。vscode的copilot也支持回退变更，可以适当用起来，也许回退版本重新开始比一股脑让AI改来改去要快得多</li>
+<li>边做边学，学习AI写出来的代码，知道有哪些组件，命名是什么。顺带去了解出现的新概念，技术组件，专有名词等等。 要清晰的指挥AI，离不开精准的描述</li>
+<li>考虑付费使用高级模型，即便花钱也比找人便宜。一些觉得AI蠢的case，或许会在高级的模型中得到改善。 目前免费的claude 3.5 sonnet preview，确实没有那么聪明的样子。</li>
+</ul>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">首页</a></li>
+        
+          <li><a href="/archives/">归档</a></li>
+        
+          <li><a href="/categories/">分类</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#AI%E7%BC%96%E7%A8%8B%E5%AF%B9%E6%88%91%E7%9A%84%E4%BB%B7%E5%80%BC"><span class="toc-number">1.</span> <span class="toc-text">AI编程对我的价值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%91%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">发现的问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%97%A0%E6%B3%95%E8%87%AA%E5%B7%B1%E8%B0%83%E8%AF%95"><span class="toc-number">2.1.</span> <span class="toc-text">1. 无法自己调试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%93%8D%E5%BA%94%E8%B6%8A%E6%9D%A5%E8%B6%8A%E4%B9%85"><span class="toc-number">2.2.</span> <span class="toc-text">2. 响应越来越久</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%AE%A9%E4%BD%BF%E7%94%A8%E8%80%85%E4%BA%A7%E7%94%9F%E4%BE%9D%E8%B5%96"><span class="toc-number">2.3.</span> <span class="toc-text">3. 让使用者产生依赖</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%A0%E7%82%B9%E5%BB%BA%E8%AE%AE"><span class="toc-number">3.</span> <span class="toc-text">几点建议</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <!-- <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&text=一次AI编程体验"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&is_video=false&description=一次AI编程体验"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=一次AI编程体验&body=Check out this article: https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&name=一次AI编程体验&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://pangjerry.space/2025/03/15/20250308_ai_coding_experience/&t=一次AI编程体验"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul> -->
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        
+        <!-- <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a> -->
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2024-2025
+    胖杰瑞
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a href="/categories/">分类</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板！\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功！");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
