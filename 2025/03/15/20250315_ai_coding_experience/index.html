@@ -9,7 +9,7 @@
     <meta name="description" content="AI编程火起来好久了，但之前没想着实现些什么。直到最近基于自身需求萌生出一个想法，而市面上似乎没有合适的工具，才用起AI编程，花了点时间用vscode+copilot折腾了一个简单的桌面应用（注，本文的AI编程全都指向vscode+copilot）。 总的来说，从0到1的过程确实很惊艳，简单几句话描述就能生成一个可以跑起来的桌面应用，关键页面UI样式也不丑，但从1开始不断加功能，不断打磨的过程也很">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一次AI编程体验">
-<meta property="og:url" content="https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/index.html">
+<meta property="og:url" content="https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/index.html">
 <meta property="og:site_name" content="胖杰瑞的笔记本">
 <meta property="og:description" content="AI编程火起来好久了，但之前没想着实现些什么。直到最近基于自身需求萌生出一个想法，而市面上似乎没有合适的工具，才用起AI编程，花了点时间用vscode+copilot折腾了一个简单的桌面应用（注，本文的AI编程全都指向vscode+copilot）。 总的来说，从0到1的过程确实很惊艳，简单几句话描述就能生成一个可以跑起来的桌面应用，关键页面UI样式也不丑，但从1开始不断加功能，不断打磨的过程也很">
 <meta property="og:locale" content="zh_CN">
@@ -69,6 +69,8 @@
         <!--
        --><li><a href="/">首页</a></li><!--
      --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
        --><li><a href="/archives/">归档</a></li><!--
      --><!--
        --><li><a href="/categories/">分类</a></li><!--
@@ -93,17 +95,17 @@
     <br/>
     <div id="share" style="display: none">
       <!-- <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&text=一次AI编程体验"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&is_video=false&description=一次AI编程体验"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=一次AI编程体验&body=Check out this article: https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&name=一次AI编程体验&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&t=一次AI编程体验"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&text=一次AI编程体验"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&is_video=false&description=一次AI编程体验"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=一次AI编程体验&body=Check out this article: https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&name=一次AI编程体验&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&t=一次AI编程体验"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul> -->
 
     </div>
@@ -215,6 +217,8 @@
         
           <li><a href="/">首页</a></li>
         
+          <li><a href="/about/">关于</a></li>
+        
           <li><a href="/archives/">归档</a></li>
         
           <li><a href="/categories/">分类</a></li>
@@ -231,17 +235,17 @@
 
     <div id="share-footer" style="display: none">
       <!-- <ul>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&text=一次AI编程体验"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&is_video=false&description=一次AI编程体验"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=一次AI编程体验&body=Check out this article: https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&name=一次AI编程体验&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://pangjerry.space/2025/03/15/20250315_ai_coding_experience/&t=一次AI编程体验"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&text=一次AI编程体验"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&is_video=false&description=一次AI编程体验"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=一次AI编程体验&body=Check out this article: https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&title=一次AI编程体验"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&name=一次AI编程体验&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jerrynotes.online/2025/03/15/20250315_ai_coding_experience/&t=一次AI编程体验"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul> -->
 
     </div>
@@ -272,6 +276,8 @@
       <ul>
         <!--
        --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
      --><!--
        --><li><a href="/archives/">归档</a></li><!--
      --><!--
