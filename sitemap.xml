@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jerrynotes.online/2024/09/28/20240928_change_theme_to_cactus/</loc>
+    
+    <lastmod>2025-07-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jerrynotes.online/about/index.html</loc>
     
     <lastmod>2025-07-30</lastmod>
@@ -59,15 +68,6 @@
     <loc>https://jerrynotes.online/2024/11/04/20241104_read_coolshell_round_one/</loc>
     
     <lastmod>2025-03-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jerrynotes.online/2024/09/28/20240928_change_theme_to_cactus/</loc>
-    
-    <lastmod>2024-12-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
