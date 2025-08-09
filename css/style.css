@@ -836,7 +836,20 @@ body {
   padding-right: 2rem;
   max-width: 20em;
   max-height: calc(95vh - 7rem);
-  text-align: right;
+  text-align: left;
+}
+#header-post #toc ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: none;
+}
+#header-post #toc ol {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: none;
+}
+#header-post #toc li {
+  list-style: none;
 }
 #header-post #toc a:hover {
   color: #2d3748;
