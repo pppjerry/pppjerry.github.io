@@ -15,7 +15,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://jerrynotes.online/assets/images/logo.png">
 <meta property="article:published_time" content="2025-08-08T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-08-21T00:50:21.894Z">
+<meta property="article:modified_time" content="2025-08-21T00:51:24.651Z">
 <meta property="article:author" content="胖杰瑞">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://jerrynotes.online/assets/images/logo.png">
@@ -124,7 +124,7 @@
     
     
       <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5"><span class="toc-number">1.</span> <span class="toc-text">我的交易策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">功能与使用流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Q-A"><span class="toc-number">3.</span> <span class="toc-text">Q&amp;A</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E9%99%A4%E4%BA%86%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%EF%BC%8C%E8%BF%98%E6%9C%89%E6%B2%A1%E6%9C%89%E5%85%B6%E4%BB%96app%E3%80%81%E7%BD%91%E7%AB%99%EF%BC%8C%E5%8F%AF%E5%A4%9A%E7%AB%AF%E5%90%8C%E6%AD%A5%E5%B9%B6%E6%9F%A5%E7%9C%8B%E6%94%B6%E7%9B%8A"><span class="toc-number">3.0.1.</span> <span class="toc-text">1. 除了浏览器插件，还有没有其他app、网站，可多端同步并查看收益</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%94%AF%E6%8C%81%E7%9B%B4%E6%8E%A5%E4%B8%8A%E4%BC%A0%E4%BA%A4%E6%98%93%E8%AE%B0%E5%BD%95%E6%88%AA%E5%9B%BE%EF%BC%8C%E8%BF%98%E5%BE%97%E7%B9%81%E7%90%90%E7%9A%84%E6%89%8B%E5%8A%A8%E5%BD%95%E5%85%A5"><span class="toc-number">3.0.2.</span> <span class="toc-text">2. 为什么不支持直接上传交易记录截图，还得繁琐的手动录入</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-number">4.</span> <span class="toc-text">最后</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5"><span class="toc-number">1.</span> <span class="toc-text">我的交易策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">功能与使用流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Q-A"><span class="toc-number">3.</span> <span class="toc-text">Q&amp;A</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-number">4.</span> <span class="toc-text">最后</span></a></li></ol>
       </div>
     
   </span>
@@ -186,9 +186,15 @@
 <p>目前支持的功能：<br>✅ 支持(批量)添加基金买入信息，通过买入时间&amp;金额，自动换算”确认净值”与”确认份额”（已考虑节假日）<br>✅ 支持部分&#x2F;全部卖出份额，通过卖出时间&amp;份额，自动换算卖出的”确认净值”与”卖出收益”（确认逻辑同买入）<br>✅ 支持分红收益，但只会计算分红登记日时持有份额对应的分红收益（如有卖出，则计算剩余份额对应的分红），忽略后续的现金分红&#x2F;红利再投<br>✅ 数据本地保存在浏览器，支持导出备份与导入恢复。（建议多导出备份，避免插件误操作等导致数据丢失）<br>✅ 支持买入卖出时记录想法<br>✅ 支持重新编辑买入信息和卖出信息</p>
 <p>操作流程如下，以支付宝为例：<br>1.打开某基金的交易记录列表，列表页有基金代码，也有买入时间和买入金额。录入时直接填入买入时间&amp;金额。<br>2.工具会自动请求天天基金，获取相关数据计算净值&amp;份额，以及分红信息（已自动处理节假日）<br>3.等刷新完成，列表会展示持有收益和固定收益（含手续费，分红和卖出收益等）<br>4.当持有收益达到预期，可选择卖出，并录入卖出信息。只需卖出时的手续费和卖出日期，同样会自动计算卖出确认净值<br>5.如果录入的买入卖出信息有误，可以编辑更新，保存后会刷新<br>6.（可选）批量录入完成，建议导出备份  </p>
 <p>本插件还支持CSV格式的批量导入，现在大模型技术相对成熟，可将基金交易记录截图，发给大模型让它整理出符合要求格式的数据，然后复制粘贴到CSV格式输入框，可节省繁琐的一一录入（但亲测大模型整理会有少许错漏，还是建议逐一核对）</p>
-<h2 id="Q-A"><a href="#Q-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><h4 id="1-除了浏览器插件，还有没有其他app、网站，可多端同步并查看收益"><a href="#1-除了浏览器插件，还有没有其他app、网站，可多端同步并查看收益" class="headerlink" title="1. 除了浏览器插件，还有没有其他app、网站，可多端同步并查看收益"></a>1. 除了浏览器插件，还有没有其他app、网站，可多端同步并查看收益</h4><p>本人追求数据本地优先，也不想维护服务器，做成app和网站都很重，浏览器插件是比较轻量的选择，所以短期内不会有其他形式的入口，也不支持多端同步。后续版本倒是有考虑支持webdav备份，这样就不用手动导入导出备份了</p>
-<h4 id="2-为什么不支持直接上传交易记录截图，还得繁琐的手动录入"><a href="#2-为什么不支持直接上传交易记录截图，还得繁琐的手动录入" class="headerlink" title="2. 为什么不支持直接上传交易记录截图，还得繁琐的手动录入"></a>2. 为什么不支持直接上传交易记录截图，还得繁琐的手动录入</h4><p>一开始确实想直接一步到位，上传交易记录截图后，插件直接解析计算数据。但是实测下来大模型效果不一定100%准确，也有成本。另外从投资的角度来说，繁琐一点也不一定是坏事，有点摩擦能加强对本次交易的印象</p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>如有问题想要反馈，欢迎邮件<a href="mailto:&#112;&#x6a;&#x77;&#x33;&#49;&#x30;&#51;&#x33;&#56;&#x30;&#x31;&#56;&#64;&#x6f;&#x75;&#116;&#x6c;&#x6f;&#111;&#x6b;&#x2e;&#x63;&#111;&#x6d;">&#112;&#x6a;&#x77;&#x33;&#49;&#x30;&#51;&#x33;&#56;&#x30;&#x31;&#56;&#64;&#x6f;&#x75;&#116;&#x6c;&#x6f;&#111;&#x6b;&#x2e;&#x63;&#111;&#x6d;</a><br>如果插件碰巧也解决了您的需求，想要鼓励我的创作，也欢迎请我喝杯瑞幸</p>
+<h2 id="Q-A"><a href="#Q-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><ol>
+<li>除了浏览器插件，还有没有其他app、网站，可多端同步并查看收益</li>
+</ol>
+<p>本人追求数据本地优先，也不想维护服务器，做成app和网站都很重，浏览器插件是比较轻量的选择，所以短期内不会有其他形式的入口，也不支持多端同步。后续版本倒是有考虑支持webdav备份，这样就不用手动导入导出备份了</p>
+<ol start="2">
+<li>为什么不支持直接上传交易记录截图，还得繁琐的手动录入</li>
+</ol>
+<p>一开始确实想直接一步到位，上传交易记录截图后，插件直接解析计算数据。但是实测下来大模型效果不一定100%准确，也有成本。另外从投资的角度来说，繁琐一点也不一定是坏事，有点摩擦能加强对本次交易的印象</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>如有问题想要反馈，欢迎邮件<a href="mailto:&#112;&#x6a;&#119;&#51;&#x31;&#48;&#x33;&#51;&#56;&#x30;&#x31;&#56;&#64;&#x6f;&#117;&#116;&#x6c;&#111;&#x6f;&#x6b;&#x2e;&#99;&#x6f;&#x6d;">&#112;&#x6a;&#119;&#51;&#x31;&#48;&#x33;&#51;&#56;&#x30;&#x31;&#56;&#64;&#x6f;&#117;&#116;&#x6c;&#111;&#x6f;&#x6b;&#x2e;&#99;&#x6f;&#x6d;</a><br>如果插件碰巧也解决了您的需求，想要鼓励我的创作，也欢迎请我喝杯瑞幸</p>
 <p><img src="/../assets/20250809_fund_shares_management/qrcode.png" alt="image-20250803124943363"></p>
 
   </div>
@@ -217,7 +223,7 @@
     
     
       <div id="toc-footer" style="display: none">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5"><span class="toc-number">1.</span> <span class="toc-text">我的交易策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">功能与使用流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Q-A"><span class="toc-number">3.</span> <span class="toc-text">Q&amp;A</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E9%99%A4%E4%BA%86%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%EF%BC%8C%E8%BF%98%E6%9C%89%E6%B2%A1%E6%9C%89%E5%85%B6%E4%BB%96app%E3%80%81%E7%BD%91%E7%AB%99%EF%BC%8C%E5%8F%AF%E5%A4%9A%E7%AB%AF%E5%90%8C%E6%AD%A5%E5%B9%B6%E6%9F%A5%E7%9C%8B%E6%94%B6%E7%9B%8A"><span class="toc-number">3.0.1.</span> <span class="toc-text">1. 除了浏览器插件，还有没有其他app、网站，可多端同步并查看收益</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%94%AF%E6%8C%81%E7%9B%B4%E6%8E%A5%E4%B8%8A%E4%BC%A0%E4%BA%A4%E6%98%93%E8%AE%B0%E5%BD%95%E6%88%AA%E5%9B%BE%EF%BC%8C%E8%BF%98%E5%BE%97%E7%B9%81%E7%90%90%E7%9A%84%E6%89%8B%E5%8A%A8%E5%BD%95%E5%85%A5"><span class="toc-number">3.0.2.</span> <span class="toc-text">2. 为什么不支持直接上传交易记录截图，还得繁琐的手动录入</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-number">4.</span> <span class="toc-text">最后</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E4%BA%A4%E6%98%93%E7%AD%96%E7%95%A5"><span class="toc-number">1.</span> <span class="toc-text">我的交易策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%B5%81%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">功能与使用流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Q-A"><span class="toc-number">3.</span> <span class="toc-text">Q&amp;A</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-number">4.</span> <span class="toc-text">最后</span></a></li></ol>
       </div>
     
 
